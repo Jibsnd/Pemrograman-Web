@@ -1,0 +1,36 @@
+
+
+.title {
+    color:#909f7c;
+    font-size: 2em;
+    text-align: center;
+}
+
+nav {
+    display: flex;           
+    gap: 25px;               
+    padding: 10px 25px;      
+    font-size: 1.2em;
+    background-color: #ffffff;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+body {
+    padding: 0% 20%;
+    font-family: Arial, sans-serif;
+    color: #909f7c;
+    background-color:#27271f;
+}
+
+#porto {
+    padding: 0% 20%;
+    font-family: Arial, sans-serif;
+    color: #909f7c;
+    background-color:#000000;
+}
+
+#mygo {
+    margin-left : 325px;
+}
