@@ -1,15 +1,33 @@
+/* ==============================
+   BASE STYLES & LAYOUT
+   ============================== */
+body {
+    padding: 0% 20%;
+    font-family: Arial, sans-serif;
+    color: #909f7c;
+    background-color: #27271f;
+}
 
+#porto {
+    padding: 0% 20%;
+    font-family: Arial, sans-serif;
+    color: #909f7c;
+    background-color: #000000;
+}
 
 .title {
-    color:#909f7c;
+    color: #909f7c;
     font-size: 2em;
     text-align: center;
 }
 
+/* ==============================
+   NAVIGATION
+   ============================== */
 nav {
-    display: flex;           
-    gap: 25px;               
-    padding: 10px 25px;      
+    display: flex;
+    gap: 25px;
+    padding: 10px 25px;
     font-size: 1.2em;
     background-color: #ffffff;
     width: fit-content;
@@ -17,20 +35,83 @@ nav {
     border-radius: 8px;
 }
 
-body {
-    padding: 0% 20%;
-    font-family: Arial, sans-serif;
-    color: #909f7c;
-    background-color:#27271f;
+nav a {
+    text-decoration: none;
+    color: #27271f;
+    font-weight: bold;
+    transition: 0.3s ease;
 }
 
-#porto {
-    padding: 0% 20%;
-    font-family: Arial, sans-serif;
+nav a:hover {
     color: #909f7c;
-    background-color:#000000;
 }
 
+/* ==============================
+   IMAGES & MEDIA
+   ============================== */
 #mygo {
-    margin-left : 325px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* ==============================
+   FORM CONTACT
+   ============================== */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    background-color: #27271f;
+    border: 1px solid #909f7c;
+    color: #909f7c;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    margin-top: -10px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #ffffff;
+}
+
+/* ==============================
+   LISTS & LINKS (FOOTER/CONTACT)
+   ============================== */
+ul {
+    list-style-type: square;
+    color: #909f7c;
+}
+
+ul li a {
+    color: #909f7c;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   MEDIA QUERIES (Syarat Wajib Tugas)
+   ============================== */
+@media (max-width: 768px) {
+    body, #porto {
+        padding: 0% 5%;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
